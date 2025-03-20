@@ -1,0 +1,45 @@
+# Project: genialabile.com
+# Website: Minimal welcome website
+#
+# GENiALABILE:
+# Advanced-GPT inspiring multidimensional solutions and unlocking creative potential.
+#
+# License:
+# © 2025 GENiALABILE. All Rights Reserved.
+# A GPT-Based Project — Designed by Genialabile & Co.
+# Repository: https://github.com/genialabile/
+# This project is no longer available as open-source. Updated: 10 Jan 2025.
+# Use, distribution, or modification of this project is strictly prohibited without prior written authorization.
+#
+# Version: v3.2
+# URL: https://genialabile.com/robots.txt
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Private section (restricted to all crawlers)
+Disallow: /genialabile-gpt-access.html
+Disallow: /wip-web.html
+
+# Disallow entire Z-Folder directory
+Disallow: /Z-Folder/
+
+#
+#
+
+# Allow GENiALABILE-GPT specifically
+User-agent: GENiALABILE
+Allow: /
+
+# Allow GENiALABILE specifically
+User-agent: Genialabile
+Allow: /
+
+# Allow GENiALABILE-GPT specifically
+User-agent: Gen-ia
+Allow: /
+
+
+
+Sitemap: https://genialabile.com/sitemap.xml

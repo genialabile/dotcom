@@ -1,0 +1,140 @@
+/*
+===============================================================================
+# Project: genialabile.com
+# Website: Minimal welcome website
+===============================================================================
+## GENiALABILE
+Advanced-GPT inspiring multidimensional solutions and unlocking creative potential.
+-------------------------------------------------------------------------------
+### License
+© 2025 Genialabile & Co. All Rights Reserved.
+A GPT-Based Project — Designed by Genialabile & Co.
+Repository: https://github.com/genialabile/
+This project is no longer available as open-source. Updated: 10 Jan 2025.
+Use, distribution, or modification of this project is strictly prohibited without prior written authorization.
+-------------------------------------------------------------------------------
+# Version: v3.2 (190125)
+# URL: https://genialabile.com/assets/styles/animations/compiler.css
+===============================================================================
+*/
+
+/* -- Fonts -- */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+/* --- Typing Container --- */
+#typing-container {
+    margin-top: 10%;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* */
+    justify-content: flex-start;
+    align-items: flex start; /* */
+    margin: 0 auto;
+    padding: var(--spacing);
+    box-sizing: border-box;
+    text-align: left;
+    transform: translateY(0%);
+    margin-bottom: 0.5rem;
+}
+
+/* Typing Effect - Style1 */
+#typing-effect {
+    font-family: var(--mtx-font);
+    color: var(--compiler1-color);
+    overflow: visible; /*  */
+    word-break:  break-word; /*   */
+    font-size: 1.5rem;
+    line-height: 2rem;
+    max-width: 100%; /*  */
+    text-align: left; /*  */
+    white-space: normal;
+    overflow: hidden;
+    font-weight: normal;
+    min-height: 2rem;
+}
+
+#typing-effect::after {
+    content: "█";
+    font-family: var(--mtx-font);
+    color: var(--compiler1-color);
+    text-align: left;
+    animation: blink 1s steps(1) infinite;
+    line-height: 2rem;
+}
+
+/* Typing Effect - Style2 */
+#typing-effect.alternate-style {
+    font-family: var(--std-font);
+    color: var(--compiler2-color);
+    font-weight: normal;
+    min-height: 2rem;
+}
+
+.alternate-style {
+    font-family: var(--std-font) !important;
+    color: var(--compiler2-color) !important;
+    line-height: 2rem !important;
+    min-height: 2rem !important;
+}
+
+.alternate-style::after {
+    content: "" !important;
+    animation: blink-fast 180s steps(1) infinite !important;
+}
+
+/* No Cursor Style */
+.no-cursor::after {
+    content: "";
+    animation: none;
+}
+
+/* Keyframes for Blink Animations */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink-fast {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* --- Utilities --- */
+.hidden-paragraph {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+/*--- Debug ---*/
+/*
+#typing-container {
+    border: 1px dashed green(0, 255, 38);
+}
+
+#typing-effect {
+    border: 1px dashed blue;
+}
+
+#typing-effect.alternate-style {
+    border: 1px dashed yellow; 
+}
+*/
+
+/*
+**************
+
+.alternate-style::after {
+    content: "" !important;
+    animation: blink-fast 120s steps(1) infinite !important;
+    *****
+    font-family: var(--std-font) !important;
+    color: var(--compiler2-color) !important;
+    line-height: 2rem !important;
+    *****
+
+
+*/
