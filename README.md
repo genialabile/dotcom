@@ -89,7 +89,7 @@ If you have any questions or feedback, feel free to reach out:
 
 ## 👾 Credits
 
-**Designed by**: [@Genialabile & Co.](https://github.com/genialabile)  
+**Designed by**: [@genialabile](https://github.com/genialabile)  
 **Hosted on**: [GitHub Pages](https://github.com/)
 
 
