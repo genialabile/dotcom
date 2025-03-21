@@ -118,8 +118,8 @@ const textArray = [
 
     ];
 
-    const typingSpeed = 47; //44x33
-    const pauseBetweenParagraphs = 1300; //16oo
+    const typingSpeed = 60; //47x44x33
+    const pauseBetweenParagraphs = 1200; //16oo
     const fadeOutDuration = 350; //5oo
     const redirectDelay = 250; 
     const redirectUrl = "https://genialabile.com/";
